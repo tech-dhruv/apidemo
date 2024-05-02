@@ -1,3 +1,5 @@
+//get api data using http
+
 import 'package:flutter/material.dart';
 import 'package:learn_api/model/multi_data_model.dart';
 import 'package:learn_api/services/api_services.dart';
@@ -63,6 +65,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               title: Text(multiData.data![i].name.toString()),
                               subtitle: Text(
                                   multiData.data![i].pantoneValue.toString()),
+                              trailing: IconButton(onPressed: (){
+
+                              }, icon: const Icon(Icons.delete)),
                             ),
                           );
                         }))

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learn_api/view/home_screen2.dart';
 
+import 'view/dio_getapi.dart';
 import 'view/home_screen.dart';
 
 
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const DioGetApi(),
     );
   }
 }
