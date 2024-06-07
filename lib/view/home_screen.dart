@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
         isReady = false;
       });
     }).onError((error, stackTrace) {
-      print(error);
+      print(error.toString());
     });
   }
 
